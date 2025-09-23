@@ -4,9 +4,9 @@ class Program
     static void Main()
     {
         Console.WriteLine("-- DEMO felhantering --");
-        // DemoRuntimeError();
-        // DemoTryCatchFinally();
-        // DemoUsingDispose();
+        DemoRuntimeError();
+        DemoTryCatchFinally();
+        DemoUsingDispose();
         DemoThrowCustomException();
     }
 
