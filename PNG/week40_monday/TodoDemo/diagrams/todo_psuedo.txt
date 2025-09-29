@@ -1,0 +1,21 @@
+Starta program
+Skapa en tom lista av uppgifter
+
+Loop tills användaren väljer "Avsluta":
+    Visa meny:
+        1. Lista uppgifter
+        2. Lägg till uppgift
+        3. Avsluta
+    Läs val
+
+    Om val 1:
+        Lista alla uppgifter, annars be lägga in ny
+    Om val 2:
+        Läs titel
+        Lägg till uppgift
+    Om val 3:
+        Avsluta program
+        
+    Om loopen körs:
+        Läs tangent
+        Rensa terminalen
