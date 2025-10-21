@@ -1,0 +1,5 @@
+-- ER Diagram: Expandera db, database diagrams -> new database diagram
+https://i.ibb.co/q30ZTCKn/new-diagram-ssms.png
+
+-- Om problem: högerklick db -> Files -> Owner: sa (system admin)
+https://i.ibb.co/n8qPF111/image.png

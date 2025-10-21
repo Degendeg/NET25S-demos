@@ -1,0 +1,2 @@
+En liten veterinärklinik vill lagra info om djur och deras ägare.
+Varje ägare kan ha flera djur, men varje djur har bara en ägare.
