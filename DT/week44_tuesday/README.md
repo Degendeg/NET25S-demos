@@ -1,4 +1,4 @@
-🔹 Fysisk databas – vad du kan berätta
+🔹 Fysisk databas
 
 1. Från logisk till fysisk modell
 - Tidigare steg: konceptuell + logisk modell → fokus på objekt och relationer.
