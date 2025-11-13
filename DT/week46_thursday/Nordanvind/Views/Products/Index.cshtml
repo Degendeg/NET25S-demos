@@ -1,0 +1,22 @@
+@model IEnumerable<Nordanvind.Models.Product>
+
+<div class="d-flex justify-content-between align-items-center">
+    <h2 class="m-0">Products</h2>
+    <a class="btn btn-primary" href="/Products/Create">Add New</a>
+</div>
+
+<table class="table mt-3">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Price</th>
+    </tr>
+    @foreach (Product p in Model)
+    {
+        <tr>
+            <td>@p.ProductId</td>
+            <td>@p.ProductName</td>
+            <td>@p.UnitPrice</td>
+        </tr>
+    }
+</table>

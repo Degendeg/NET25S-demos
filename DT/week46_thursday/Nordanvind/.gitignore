@@ -1,0 +1,58 @@
+# Build outputs
+bin/
+obj/
+out/
+*.exe
+*.dll
+*.log
+*.pdb
+
+# User-specific files
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code
+.vscode/
+.history/
+*.code-workspace
+
+# Visual Studio
+.vs/
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ASP.NET / Entity Framework
+appsettings.Development.json
+appsettings.Local.json
+appsettings.*.json.user
+
+# Logs / temp
+*.log
+logs/
+Temp/
+tmp/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Publish outputs
+publish/
+wwwroot/dist/
+wwwroot/lib/
+
+# Secrets
+secrets.json
+.env
+.env.*
