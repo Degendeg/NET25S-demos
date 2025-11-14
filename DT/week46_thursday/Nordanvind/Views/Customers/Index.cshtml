@@ -1,0 +1,31 @@
+@model IEnumerable<Nordanvind.Models.Customer>
+
+<div class="d-flex justify-content-between align-items-center">
+    <h2 class="m-0">Customers</h2>
+    <a class="btn btn-primary" href="/Customers/Create">Add New</a>
+</div>
+
+<table class="table table-hover mt-3">
+    <tr>
+        <th>Id</th>
+        <th>Company name</th>
+        <th>Contact name</th>
+        <th>Contact title</th>
+        <th></th>
+    </tr>
+    @foreach (Customer c in Model)
+    {
+        <tr>
+            <td>@c.CustomerId</td>
+            <td>@c.CompanyName</td>
+            <td>@c.ContactName</td>
+            <td>@c.ContactTitle</td>
+            <td>
+                <a asp-action="Delete" asp-route-id="@c.CustomerId" title="Delete @c.CustomerId"
+                    class="badge bg-danger pb-2 text-white text-decoration-none">
+                    x
+                </a>
+            </td>
+        </tr>
+    }
+</table>

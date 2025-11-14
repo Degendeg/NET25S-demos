@@ -1,0 +1,24 @@
+@model Nordanvind.Models.Customer
+
+<h2>Add Cusutomer</h2>
+
+<form method="post">
+    <div class="mb-3">
+        <label>Customer id</label>
+        <input asp-for="CustomerId" class="form-control" minlength="5" maxlength="5" />
+    </div>
+    <div class="mb-3">
+        <label>Company name</label>
+        <input asp-for="CompanyName" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>Contact name</label>
+        <input asp-for="ContactName" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>Contact title</label>
+        <input asp-for="ContactTitle" class="form-control" />
+    </div>
+    <button class="btn btn-success">Save</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>

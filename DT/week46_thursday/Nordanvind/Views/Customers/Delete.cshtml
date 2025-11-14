@@ -1,0 +1,11 @@
+@model Nordanvind.Models.Customer
+
+<h2>Delete Customer</h2>
+
+<p>Are you sure you want to delete <strong>@Model.CustomerId</strong>?</p>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="CustomerId" />
+    <button class="btn btn-danger">Delete</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>
