@@ -5,11 +5,12 @@
     <a class="btn btn-primary" href="/Products/Create">Add New</a>
 </div>
 
-<table class="table mt-3">
+<table class="table table-hover mt-3">
     <tr>
         <th>Id</th>
         <th>Name</th>
         <th>Price</th>
+        <th></th>
     </tr>
     @foreach (Product p in Model)
     {
@@ -17,6 +18,12 @@
             <td>@p.ProductId</td>
             <td>@p.ProductName</td>
             <td>@p.UnitPrice</td>
+            <td>
+                <a asp-action="Delete" asp-route-id="@p.ProductId" title="Delete @p.ProductName"
+                    class="badge bg-danger pb-2 text-white text-decoration-none">
+                    x
+                </a>
+            </td>
         </tr>
     }
 </table>

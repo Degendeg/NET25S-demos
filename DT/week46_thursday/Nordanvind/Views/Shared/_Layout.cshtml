@@ -46,6 +46,28 @@
             &copy; @DateTime.Now.Year - Nordanvind
         </div>
     </footer>
+    <button id="scrollToTopBtn" class="btn btn-secondary position-fixed bottom-0 end-0 m-4">↑</button>
+    <script>
+        const btn = document.getElementById('scrollToTopBtn');
+
+        const toggleBtn = () => {
+            const hasScroll = document.documentElement.scrollHeight > window.innerHeight;
+            if (window.scrollY > 200 && hasScroll) {
+                btn.style.display = "block";
+            }
+            else {
+                btn.style.display = "none";
+            }
+        }
+
+        window.addEventListener("scroll", toggleBtn);
+        window.addEventListener("resize", toggleBtn);
+        window.addEventListener("scroll", toggleBtn);
+
+        btn.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        })
+    </script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
