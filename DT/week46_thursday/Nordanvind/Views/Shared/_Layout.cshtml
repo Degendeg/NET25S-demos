@@ -64,7 +64,7 @@
         const btn = document.getElementById('scrollToTopBtn');
 
         const toggleBtn = () => {
-            const hasScroll = document.documentElement.scrollHeight > window.innerHeight;
+            const hasScroll = document.body.scrollHeight > window.innerHeight;
             if (window.scrollY > 200 && hasScroll) {
                 btn.style.display = "block";
             }
@@ -72,6 +72,8 @@
                 btn.style.display = "none";
             }
         }
+
+        toggleBtn();
 
         window.addEventListener("scroll", toggleBtn);
         window.addEventListener("resize", toggleBtn);
